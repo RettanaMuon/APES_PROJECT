@@ -1,0 +1,14 @@
+<div >
+    <div class="container-fluid">
+        <div class="row">
+            <li *ngFor="let r of getRoot()">
+                <div class="dashRoot col">
+                    <a href="{{r.data.url}}">{{r.data.name}}</a>
+                    <li *ngFor="let c of getChilds(r._id)">
+                        <a href="{{c.data.url}}">{{c.data.name}}</a>
+                    </li>
+                </div>
+            </li>
+        </div>
+    </div>
+</div>

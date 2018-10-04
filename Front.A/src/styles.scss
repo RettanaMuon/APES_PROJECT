@@ -1,0 +1,21 @@
+html {
+  /* ##########       ##########
+      Theme variables :
+     ##########       ##########*/
+  /* ~~ Theme Colors ~~ */
+  --color-main : blue;
+  --color-sub : blue;
+  --color-border : blue;
+  /* ~~ Common ~~ */
+  --CPadding: 50px;
+  --CSubPadding : 25px;
+  --CMargin : 50px;
+  --CSubMargin : 25px;
+
+  /* ~~ Top ~~ */
+  --TOPadding : 0 var(--CPadding) 0 var(--CPadding);
+  --TOMargin  : 0 ;
+
+  /* ~~ Forms ~~ */
+
+}

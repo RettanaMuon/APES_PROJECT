@@ -1,0 +1,10 @@
+
+<div>
+    state = {{errCode.state}}<br>
+    message = {{errCode.message}}
+</div>
+<div>
+        <input type="text"  [(ngModel)]="loginForm.username" placeholder="username">
+        <input type="text"  [(ngModel)]="loginForm.password" placeholder="password">
+        <input type="button" value = "log" (click)="check()">
+</div>
