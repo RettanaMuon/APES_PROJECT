@@ -10,17 +10,17 @@ import {Observable} from "rxjs/internal/Observable";
   styleUrls: ['./log.component.scss']
 })
 export class LogComponent implements OnInit {
-     loginForm  : LoginForm ={
-         username : "",
-         password : ""
+     loginForm: LoginForm = {
+         username : '',
+         password : ''
      };
-     errCode : ErrorCode = {
+     errCode: ErrorCode = {
          state : 0,
-         message : ""
+         message : ''
      };
 
   constructor(
-      private loginService : LoginService
+      private loginService: LoginService
   ) { }
 
   ngOnInit() {

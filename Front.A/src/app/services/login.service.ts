@@ -13,15 +13,15 @@ import {post} from "selenium-webdriver/http";
 export class LoginService {
 
   constructor(
-      private http : HttpClient
+      private http: HttpClient
   ) { }
 
-  ask(form : LoginForm) : Observable<ErrorCode>{
-    var httpParams : HttpParams = new HttpParams()
-        .append("username" , form.username)
-        .append("password" , form.password
-    )
-    return this.http.get<ErrorCode>("http://localhost:8080/login" ,{params : httpParams});
+  ask(form : LoginForm): Observable<ErrorCode> {
+    let httpParams: HttpParams = new HttpParams()
+        .append('username' , form.username)
+        .append('password' , form.password
+    );
+    return this.http.get<ErrorCode>('http://localhost:8080/login' , {params : httpParams});
   }
 
 }

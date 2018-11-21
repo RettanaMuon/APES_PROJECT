@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -15,7 +15,8 @@ import { SnsComponent } from './top/sns/sns.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
 import { SideComponent } from './body/side/side.component';
 import { SearchComponent } from './top/search/search.component';
-import { LogComponent} from "./top/log/log.component";
+import { LogComponent} from './top/log/log.component';
+import { PublisherComponent } from './body/publisher/publisher.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LogComponent} from "./top/log/log.component";
       CopyrightComponent,
       SideComponent,
       SearchComponent,
-      LogComponent
+      LogComponent,
+      PublisherComponent
   ],
   imports: [
     BrowserModule,

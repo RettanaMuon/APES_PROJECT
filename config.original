@@ -1,0 +1,11 @@
+################################################################
+#### Configuration file                                     ####
+#### APES CMS                                               ####
+################################################################
+## Commons
+front_url: http://localhost:4200/
+back_url: http://localhost:8080/
+database_host: mongodb://localhost
+database_name: CMSP
+
+
