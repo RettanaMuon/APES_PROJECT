@@ -1,0 +1,25 @@
+<h1>Installer</h1>
+
+<div>
+  Front-End URL : <input type=text [(ngModel)]="this.frontURL">
+</div>
+<div>
+  Back-End URL : <input type=text [(ngModel)]="this.backURL">
+</div>
+<div>
+  Database address : <input type=text [(ngModel)]="this.mongodbURL">
+</div>
+<div>
+  Database name : <input type=text [(ngModel)]="this.databaseName">
+</div>
+
+<div>
+  <input type="submit" (click)="createConfig()">
+</div>
+
+<div>
+  Result of installation :<br>
+  {{errCode.message}}
+</div>
+
+

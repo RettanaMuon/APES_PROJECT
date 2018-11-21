@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE-javadoc.jar!/" />
     </JAVADOC>
