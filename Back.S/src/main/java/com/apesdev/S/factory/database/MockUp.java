@@ -3,7 +3,6 @@ package com.apesdev.S.factory.database;
 import com.apesdev.S.core.assets.ErrorCode;
 import com.apesdev.S.core.assets._IDs;
 import com.apesdev.S.core.database.DB;
-import com.apesdev.S.core.nodes.NodeData;
 import com.apesdev.S.core.nodes._IDNode;
 import com.apesdev.S.core.parameter.Collection;
 import com.apesdev.S.core.parameter.Counters;
@@ -15,7 +14,6 @@ import java.util.Date;
 
 import static com.apesdev.S.core.parameter.Collection.C_CATEGORIES;
 import static com.apesdev.S.core.parameter.Collection.C_USERS;
-import static com.apesdev.S.core.parameter.Common.R_ADMIN;
 import static com.apesdev.S.core.parameter.Indexes.I_UNAME;
 
 public class MockUp {
@@ -30,7 +28,7 @@ public class MockUp {
                     "Istrator",
                     "mock-up@admin.com",
                     new Date(),
-                    R_ADMIN
+                    "admin"
             ).insert();
             return new ErrorCode(1, "Mock-up admin created.\n");
         }else{
