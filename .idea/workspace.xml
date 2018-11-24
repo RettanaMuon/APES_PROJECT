@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dcb0523-a9dd-4903-a1d9-82913bb33415" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deploy/Deploy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deploy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deploy/Parser.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Back.S/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,7 +51,7 @@
           <entry key="class" value="6" />
           <entry key="cmd" value="2" />
           <entry key="config" value="8" />
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="24" />
           <entry key="iml" value="4" />
           <entry key="java" value="183" />
@@ -76,7 +73,7 @@
           <entry key="IDEA_MODULE" value="4" />
           <entry key="JAVA" value="183" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Properties" value="7" />
           <entry key="SCSS" value="3" />
           <entry key="TypeScript" value="74" />
@@ -385,7 +382,11 @@
           </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -427,7 +428,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Back.S/src/main/java/com/apesdev/S/deployment/parser.java" />
         <option value="$PROJECT_DIR$/Back.S/src/main/java/com/apesdev/S/deployment/Main.java" />
         <option value="$PROJECT_DIR$/Back.S/src/main/java/com/apesdev/S/deployment/Parser.java" />
         <option value="$PROJECT_DIR$/Deploy/Parser.java" />
@@ -478,6 +478,7 @@
         <option value="$PROJECT_DIR$/Front.A/src/app/install/install.component.html" />
         <option value="$PROJECT_DIR$/Back.S/pom.xml" />
         <option value="$PROJECT_DIR$/Back.S/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -910,7 +911,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543055081261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543055548909" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/install" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="C:\Users\Rettana Muon\Projects\APES_PROJECT\Front.A\node_modules\tslint" />
@@ -1049,7 +1050,7 @@
       <workItem from="1542820878654" duration="6254000" />
       <workItem from="1542833166921" duration="6468000" />
       <workItem from="1542985058328" duration="8730000" />
-      <workItem from="1543050928172" duration="4321000" />
+      <workItem from="1543050928172" duration="4616000" />
     </task>
     <task id="LOCAL-00001" summary="New package factory,&#10;Core database initialization move in factory package">
       <created>1538733722309</created>
@@ -1073,7 +1074,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208384000" />
+    <option name="totallyTimeSpent" value="208679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="867" height="936" extended-state="0" />
@@ -1327,7 +1328,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
