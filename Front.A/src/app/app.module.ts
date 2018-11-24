@@ -17,6 +17,15 @@ import { SideComponent } from './body/side/side.component';
 import { SearchComponent } from './top/search/search.component';
 import { LogComponent} from './top/log/log.component';
 import { PublisherComponent } from './body/publisher/publisher.component';
+import { PublicationsComponent } from './body/publications/publications.component';
+import { InstallComponent } from './install/install.component';
+import { RouterModule } from '@angular/router';
+import { RootComponent } from './root/root.component';
+
+const appRoutes = [
+  { path : 'install', component: InstallComponent},
+  { path : '', component : RootComponent}
+];
 
 @NgModule({
   declarations: [
@@ -30,9 +39,16 @@ import { PublisherComponent } from './body/publisher/publisher.component';
       SideComponent,
       SearchComponent,
       LogComponent,
-      PublisherComponent
+      PublisherComponent,
+      PublicationsComponent,
+      InstallComponent,
+      RootComponent,
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    ),
     BrowserModule,
     NgbModule.forRoot(),
       FormsModule,

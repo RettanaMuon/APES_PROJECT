@@ -12,8 +12,6 @@ import org.bson.Document;
 
 import static com.apesdev.S.core.parameter.Collection.*;
 import static com.apesdev.S.core.parameter.Indexes.*;
-import static com.apesdev.S.core.parameter.Indexes.I_SESSION;
-import static com.apesdev.S.factory.database.MockUp.createCategory;
 
 public class Core {
     public static ErrorCode createCore(){
@@ -30,7 +28,16 @@ public class Core {
 
         // Initialize Publications
         new Counter(Counters.COUNT_PUBS, Counters.COUNT_PUBS_COMMENT);
-        _IDNode.initializeDatabase(Collection.C_PUBS, true);
+        MongoCollection pub = DB.getCollection(C_PUBLICATIONS);
+        pub.createIndex(
+                new Document()
+                .append(I_TITLE, 1)
+                .append(I_CATEGORY, 1)
+                .append(I_AUTHOR, 1)
+                .append(I_CONTENT, 1)
+                .append(I_DATE, 1)
+                .append (I_COMMENTS, 1)
+        );
         str+="Publications collection has been created.\n";
 
         // Initialize Comments
@@ -56,8 +63,11 @@ public class Core {
         // Initialize Categories
         _IDNode.initializeDatabase(Collection.C_CATEGORIES, true);
         str+="Categories collection has been created.\n";
-        str+=createCategory().getMessage();
-        // return
+
+        // Initialize Comments
+        _IDNode.initializeDatabase(Collection.C_COMMENTS);
+
+        // return ErrorCode
         return new ErrorCode(1,str);
     }
 

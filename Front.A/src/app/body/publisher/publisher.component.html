@@ -1,0 +1,8 @@
+<p>
+  Publish something !
+  <input type=text placeholder="Publication Title" [(ngModel)]="publisherForm.title" >
+  <input type="text" placeholder="Publication Content" [(ngModel)]="publisherForm.content">
+  <input type="button" value="publish" (click)="check()">
+  {{errCode.message}}   <br>
+  {{errCode.state}}
+</p>

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginService} from "../../services/login.service";
-import {ErrorCode} from "../../services/jsonPattern/ErrorCode";
-import {LoginForm} from "../../services/jsonPattern/LoginForm";
-import {Observable} from "rxjs/internal/Observable";
+import {LoginService} from '../../services/login.service';
+import {ErrorCode} from '../../services/jsonPattern/ErrorCode';
+import {LoginForm} from '../../services/jsonPattern/LoginForm';
 
 @Component({
   selector: 'app-log',
@@ -26,7 +25,7 @@ export class LogComponent implements OnInit {
   ngOnInit() {
   }
 
-  check() : void{
+  check(): void {
       this.loginService.ask(this.loginForm)
           .subscribe(errCode => this.errCode = errCode);
   }

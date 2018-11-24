@@ -1,0 +1,8 @@
+<p >
+
+  publications works!
+  <li *ngFor="let p of publications" >
+    <p *ngIf="p != null"> {{p.title}}, {{p.author}}, {{p.date}} <br> {{p.content}}</p>
+    <p *ngIf="p == null">Error while charging publication.</p>
+  </li>
+</p>
